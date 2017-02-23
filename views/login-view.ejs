@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Qr Login</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Login QR:</h1>
+    <div id="qrcode"></div>
+    <p class="status" id="qr-value">
+      Loading...
+    </p>
+    <!-- Firebase y jquery y qrcode desde sus CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <!-- Socket.io creado por nuestro servidor / cambiar por la url que corresponda -->
+    <script src="socket.io/socket.io.js"></script>
+    <!-- Nuestra app para el front -->
+    <script src="js/front-app.js"></script>
+  </body>
+</html>

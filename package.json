@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "One-time passcode login",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack ./js-views/app.js ./public/js/app.bundle.js && node app.js",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmarcos87/qrlogin-server.git"
+  },
+  "keywords": [
+    "qr",
+    "login",
+    "node"
+  ],
+  "author": "Marcos Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmarcos87/qrlogin-server/issues"
+  },
+  "homepage": "https://github.com/gmarcos87/qrlogin-server#readme",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "firebase-admin": "^4.0.4",
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0",
+    "webpack": "^1.14.0"
+  }
+}
